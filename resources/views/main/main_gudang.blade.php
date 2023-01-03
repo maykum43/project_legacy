@@ -198,42 +198,44 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Data Barang</span>
+                <span class="menu-title">Invoice</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                <i class="mdi mdi-blur-linear menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="inv/inv.blade.php">Data Invoice</a></li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="pages/ui-features/typography.html">Data Customer</a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="menu-title">Icons</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
+                <span class="menu-title">Data Barang</span>
+                <i class="mdi mdi-apps menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Forms</span>
+                <span class="menu-title">Surat Jalan</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/charts/chartjs.html">
-                <span class="menu-title">Charts</span>
-                <i class="mdi mdi-chart-bar menu-icon"></i>
+                <span class="menu-title">Barang Masuk</span>
+                <i class="mdi mdi-airplane-landing menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/tables/basic-table.html">
-                <span class="menu-title">Tables</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
+                <span class="menu-title">Stok of Name</span>
+                <i class="mdi mdi-content-paste menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
+            {{--<li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
                 <span class="menu-title">Sample Pages</span>
                 <i class="menu-arrow"></i>
@@ -265,7 +267,7 @@
                   </ul>
                 </div>
               </span>
-            </li>
+            </li> --}}
           </ul>
         </nav>
         <!-- partial -->
@@ -275,8 +277,8 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid d-flex justify-content-between">
-              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © fikbee.com 2023</span>
+              {{-- <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span> --}}
             </div>
           </footer>
           <!-- partial -->
