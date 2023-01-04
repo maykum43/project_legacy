@@ -8,6 +8,11 @@
                 <i class="mdi mdi-book-open"></i>
             </span> Data Invoice
         </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <button type="button" class="btn btn-gradient-info btn-rounded btn-fw">Invoice Baru</button>
+            </ol>
+          </nav>
     </div>
     <div class="row">
         <div class="col-12 grid-margin">
@@ -31,9 +36,27 @@
                             <tbody>
                                 <tr>
                                     <td> 0212 </td>
-                                        <label class="badge badge-gradient-danger">Hampir Habis</label>
-                                    
-                                    <td> 4 </td>
+                                    <td>Fikri</td>
+                                    <td>Mirza</td>
+                                    <td>Cey Crinkle Premium</td>
+                                    <td>10</td>
+                                    <td>Rp. 6,000,000</td>
+                                    <td><label class="badge badge-gradient-warning">Belum Bayar</label></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                            <div class="dropdown-menu" style="">
+                                              <a class="dropdown-item">Go back</a>
+                                              <a class="dropdown-item">Delete</a>
+                                              <a class="dropdown-item">Swap</a>
+                                            </div>
+                                          </div>
+                                        {{-- <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-gradient-success btn-sm">btn-sm</button>
+                                            <button type="button" class="btn btn-gradient-warning btn-sm">btn-sm</button>
+                                            <button type="button" class="btn btn-gradient-danger btn-sm">btn-sm</button>
+                                          </div> --}}
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
