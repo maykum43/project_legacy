@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index_gudang');
 });
+
+//Invoice
+Route::get('/inv', 'InvoiceController@index')->name('inv');

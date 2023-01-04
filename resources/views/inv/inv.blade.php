@@ -5,107 +5,34 @@
     <div class="page-header">
         <h3 class="page-title">
             <span class="page-title-icon bg-gradient-primary text-white me-2">
-                <i class="mdi mdi-home"></i>
-            </span> Dashboard
+                <i class="mdi mdi-book-open"></i>
+            </span> Data Invoice
         </h3>
-        {{-- <nav aria-label="breadcrumb">
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i
-                        class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                </li>
-            </ul>
-        </nav> --}}
     </div>
-    <div class="row">
-        <div class="col-md-4 stretch-card grid-margin">
-            <div class="card bg-gradient-danger card-img-holder text-white">
-                <div class="card-body">
-                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">Jumlah Roll Keluar <i
-                            class="mdi mdi-airplane-takeoff mdi-24px float-right"></i>
-                    </h4>
-                    <h2 class="mb-5">550</h2>
-                    <h6 class="card-text">Per 2 Januari 2023</h6>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 stretch-card grid-margin">
-            <div class="card bg-gradient-info card-img-holder text-white">
-                <div class="card-body">
-                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">Jumlah YDS Keluar <i
-                            class="mdi mdi-airplane-takeoff mdi-24px float-right"></i>
-                    </h4>
-                    <h2 class="mb-5">45,633</h2>
-                    <h6 class="card-text">Per 2 Januari 2023</h6>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 stretch-card grid-margin">
-            <div class="card bg-gradient-success card-img-holder text-white">
-                <div class="card-body">
-                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">Jumlah Invoice<i
-                            class="mdi mdi-diamond mdi-24px float-right"></i>
-                    </h4>
-                    <h2 class="mb-5">95</h2>
-                    <h6 class="card-text">Per 2 Januari 2023</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- <div class="row">
-        <div class="col-md-7 grid-margin stretch-card">
-            <div class="card">
-                <div class="card-body">
-                    <div class="clearfix">
-                        <h4 class="card-title float-left">Visit And Sales Statistics</h4>
-                        <div id="visit-sale-chart-legend"
-                            class="rounded-legend legend-horizontal legend-top-right float-right"></div>
-                    </div>
-                    <canvas id="visit-sale-chart" class="mt-4"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5 grid-margin stretch-card">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Traffic Sources</h4>
-                    <canvas id="traffic-chart"></canvas>
-                    <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
     <div class="row">
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Info Stok Barang</h4>
+                    <h4 class="card-title">Data Invoice</h4>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th> Nama Barang </th>
-                                    <th> CD Warna </th>
-                                    <th> Nama Warna </th>
+                                    <th> No. Invoice </th>
+                                    <th> Nama Customer </th>
+                                    <th> Sales </th>
+                                    <th> Nama Kain </th>
+                                    <th> Roll </th>
+                                    <th> Jumlah </th>
                                     <th> Status </th>
-                                    <th> Stok Sekarang </th>
+                                    <th> Action </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        {{-- <img src="assets/images/faces/face1.jpg" class="me-2" alt="image">  --}}
-                                        Cey Crinkle Giveenchi
-                                    </td>
-                                    <td> 12 </td>
-                                    <td> Sage Green </td>
-                                    <td>
+                                    <td> 0212 </td>
                                         <label class="badge badge-gradient-danger">Hampir Habis</label>
-                                    </td>
+                                    
                                     <td> 4 </td>
                                 </tr>
                             </tbody>
