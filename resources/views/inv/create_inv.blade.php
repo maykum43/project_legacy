@@ -6,12 +6,12 @@
         <h3 class="page-title">
             <span class="page-title-icon bg-gradient-primary text-white me-2">
                 <i class="mdi mdi-book-open"></i>
-            </span> Data Invoice
+            </span> Invoice Baru
         </h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 {{-- <a href="" type="button" class="btn btn-gradient-info btn-fw">Invoice Baru</a> --}}
-                <a href="{{ route('inv.create') }}" type="button" class="btn btn-gradient-info btn-icon-text"> 
+                <a href="" type="button" class="btn btn-gradient-info btn-icon-text"> 
                     <i class=" mdi mdi-note-plus btn-icon-append"></i>
                     Invoice Baru
                 </a>

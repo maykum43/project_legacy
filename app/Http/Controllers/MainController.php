@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class InvoiceController extends Controller
+class MainController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        return view('inv.inv');
+        return view('index_gudang');
     }
 
     /**
@@ -23,7 +23,7 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-        return view('inv.create_inv');
+        //
     }
 
     /**
