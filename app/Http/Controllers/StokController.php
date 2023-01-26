@@ -13,7 +13,7 @@ class StokController extends Controller
      */
     public function index()
     {
-        //
+        return view('brg.data_brg');
     }
 
     /**

@@ -20,3 +20,6 @@ Route::get('/index', 'MainController@index')->name('home');
 //Invoice
 Route::get('/inv', 'InvoiceController@index')->name('inv');
 Route::get('/inv.create', 'InvoiceController@create')->name('inv.create');
+
+//Brg
+Route::get('/brg','StokController@index')->name('brg');

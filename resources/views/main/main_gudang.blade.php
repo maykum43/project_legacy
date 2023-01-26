@@ -212,7 +212,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/icons/mdi.html">
+              <a class="nav-link" href="{{route('brg')}}">
                 <span class="menu-title">Data Barang</span>
                 <i class="mdi mdi-apps menu-icon"></i>
               </a>
