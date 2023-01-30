@@ -212,11 +212,26 @@
               </div>
             </li>
             <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#dt_produk" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Data Produk</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-apps menu-icon"></i>
+              </a>
+              <div class="collapse" id="dt_produk">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="{{ route('brg') }}">Master Produk</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{{ route('cols_dt') }}">Master Warna</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="">Master Design</a></li>
+                  {{-- {{ route('dsg') }} --}}
+                </ul>
+              </div>
+            </li>
+            {{-- <li class="nav-item">
               <a class="nav-link" href="{{route('brg')}}">
                 <span class="menu-title">Data Barang</span>
                 <i class="mdi mdi-apps menu-icon"></i>
               </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
               <a class="nav-link" href="pages/forms/basic_elements.html">
                 <span class="menu-title">Surat Jalan</span>

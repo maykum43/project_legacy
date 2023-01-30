@@ -23,3 +23,7 @@ Route::get('/inv.create', 'InvoiceController@create')->name('inv.create');
 
 //Brg
 Route::get('/brg','StokController@index')->name('brg');
+
+//Coll
+Route::get('/cols','ControllerWarna@index')->name('cols_dt');
+Route::get('/create_col','ControllerWarna@create')->name('col.create');
