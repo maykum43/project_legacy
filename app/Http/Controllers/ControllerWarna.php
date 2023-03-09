@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Col_Model;
 
 class ControllerWarna extends Controller
 {
@@ -13,7 +14,9 @@ class ControllerWarna extends Controller
      */
     public function index()
     {
-        return view('col.data_col');
+        $cols = Col_Model::paginate(20);
+
+        return view('col.data_col',compact('cols'));
     }
 
     /**
@@ -34,7 +37,20 @@ class ControllerWarna extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'cd_col' => 'required|max:255',
+            'nama_col' => 'required|max:255',
+            'rgb' => 'required|unique:colors|max:7',
+        ]);
+    
+        $color = new Col_Model;
+        $color->cd_col = $request->cd_col;
+        $color->nama_col = $request->nama_col;
+        $color->rgb = $request->rgb;
+        $color->save();
+    
+        return redirect()->route('cols_dt')
+            ->with('success', 'Color added successfully.');
     }
 
     /**

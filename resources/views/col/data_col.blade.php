@@ -10,7 +10,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 {{-- <a href="" type="button" class="btn btn-gradient-info btn-fw">Invoice Baru</a> --}}
-                <a href="{{ route('col.create_col') }}" type="button" class="btn btn-gradient-info btn-icon-text">
+                <a href="{{ route('col.create') }}" type="button" class="btn btn-gradient-info btn-icon-text">
                     <i class=" mdi mdi-note-plus btn-icon-append"></i>
                     Tambah Warna
                 </a>
@@ -47,6 +47,11 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @php
+                                $i= 1;    
+                                @endphp
+
+                                @foreach ($cols as $item)
                                 <tr>
                                     <td>
                                         {{-- <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i> --}}
@@ -76,7 +81,9 @@
                                             </div>
                                         </div>
                                     </td>
-                                </tr>
+                                </tr>  
+                                @endforeach
+                                
                             </tbody>
                         </table>
                     </div>
