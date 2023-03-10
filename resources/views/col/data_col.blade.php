@@ -55,16 +55,25 @@
                                 <tr>
                                     <td>
                                         {{-- <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i> --}}
-                                        1
+                                        {{ $i++ }}
                                     </td>
-                                    <td>1</td>
-                                    <td>Broken White</td>
+                                    <td>{{ $item->cd_col }}</td>
+                                    <td>{{ $item->nama_col }}</td>
                                     <td>
                                         <div id="visit-sale-chart-legend"
                                             class="rounded-legend legend-vertical legend-top-center float-center">
                                             <ul>
-                                                <li><span class="legend-dots"
-                                                        style="background:linear-gradient(to right, rgba(238,235,227,1), rgb(227, 238, 238))"></span>
+                                                <li>
+                                                    <span class="legend-dots"
+                                                        style="background:linear-gradient(to right, rgba({{$item->rgb}}), rgba({{$item->rgb}}))"></span>
+                                                        {{-- <style>
+                                                            .bulat {
+                                                            width: 50px;
+                                                            height: 50px;
+                                                            border-radius: 50%;
+                                                            background-color: #{{$item->rgb}}};
+                                                        }
+                                                        </style> --}}
                                                 </li>
                                             </ul>
                                         </div>
@@ -76,8 +85,12 @@
                                                 data-bs-toggle="dropdown" aria-expanded="false">Option</button>
                                             <div class="dropdown-menu" style="">
                                                 <a herf="#" class="dropdown-item">Detail</a>
-                                                <a class="dropdown-item">Edit</a>
-                                                <a class="dropdown-item">Hapus</a>
+                                                <a href="{{ route('col.edit') }}" class="dropdown-item">Edit</a>
+                                                <a href="" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="dropdown-item">Hapus</a>
+                                                {{-- <button type="submit" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm">
+                                                    Hapus
+                                                </button> 
+                                                {{ route('col.delete') }} --}}
                                             </div>
                                         </div>
                                     </td>

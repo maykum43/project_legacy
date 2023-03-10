@@ -30,7 +30,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Nama Warna</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" name="nama_col">
                             </div>
                           </div>
                         </div>
@@ -38,7 +38,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Kode Warna</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" name="cd_col">
                             </div>
                           </div>
                         </div>
@@ -48,7 +48,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">#HEX</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" name="rgb">
                             </div>
                           </div>
                         </div>
@@ -62,7 +62,7 @@
                         </div> --}}
                       </div>
                       <button type="submit" class="btn btn-gradient-info me-2">Simpan</button>
-                      <button class="btn btn-gradient-light me-2">Batal</button>
+                      <a href="{{ route('cols_dt')}}" class="btn btn-gradient-light me-2">Batal</button>
                     </form>
                   </div>
             </div>
