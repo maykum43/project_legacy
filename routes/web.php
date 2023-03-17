@@ -28,4 +28,5 @@ Route::get('/brg','StokController@index')->name('brg');
 Route::get('/cols','ControllerWarna@index')->name('cols_dt');
 Route::get('/create_col','ControllerWarna@create')->name('col.create');
 Route::post('/save_col','ControllerWarna@store')->name('col.save');
-Route::get('/save_col','ControllerWarna@edit')->name('col.edit');
+Route::get('/edit_col/{id}','ControllerWarna@edit')->name('col.edit');
+Route::post('/update_col/{id}','ControllerWarna@update')->name('col.update');

@@ -73,7 +73,7 @@ class ControllerWarna extends Controller
     public function edit($id)
     {
         $data = Col_Model::where('id_col',$id)->first();
-        return view('sn.edit_sn', compact('data'));;
+        return view('col.edit_col', compact('data'));;
     }
 
     /**
@@ -83,9 +83,19 @@ class ControllerWarna extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id, Col_Model $colModel)
     {
-        //
+        // dd($request->all());
+        $simpan = $colModel->where('id_col',$id)->update([
+            'nama_col' => $request->nama_col,
+            'cd_col' => $request->cd_col,
+            'rgb' => $request->rgb,
+        ]);
+        if(!$simpan){
+            return redirect()->route('cols_dt')
+            ->with('error', 'Warna gagal dirubah.');
+        }
+        return redirect()->route('cols_dt')->with('success','Warna berhasil di update');
     }
 
     /**

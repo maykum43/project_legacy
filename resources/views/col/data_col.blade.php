@@ -85,7 +85,7 @@
                                                 data-bs-toggle="dropdown" aria-expanded="false">Option</button>
                                             <div class="dropdown-menu" style="">
                                                 <a herf="#" class="dropdown-item">Detail</a>
-                                                <a href="{{ route('col.edit') }}" class="dropdown-item">Edit</a>
+                                                <a href="{{ route('col.edit',$item->id_col) }}" class="dropdown-item">Edit</a>
                                                 <a href="" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="dropdown-item">Hapus</a>
                                                 {{-- <button type="submit" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm">
                                                     Hapus
