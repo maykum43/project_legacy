@@ -59,13 +59,16 @@
                                     </td>
                                     <td>{{ $item->cd_col }}</td>
                                     <td>{{ $item->nama_col }}</td>
+                                    {{-- <td style="background-color: {{ $item->rgb }}; border-radius: 50%;">
+                                        <div style="width: 10px; height: 10px;"></div>
+                                    </td> --}}
                                     <td>
                                         <div id="visit-sale-chart-legend"
                                             class="rounded-legend legend-vertical legend-top-center float-center">
                                             <ul>
                                                 <li>
                                                     <span class="legend-dots"
-                                                        style="background:linear-gradient(to right, rgba({{$item->rgb}}), rgba({{$item->rgb}}))"></span>
+                                                        style="background-color: {{$item->rgb}}"></span>
                                                         {{-- <style>
                                                             .bulat {
                                                             width: 50px;

@@ -45,10 +45,8 @@
                       <div class="row">
                         <div class="col-md-6">
                           <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">#HEX</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" name="rgb">
-                            </div>
+                            <label for="color">Warna:</label>
+                            <input type="color" id="color" name="color" value="{{ old('color') }}" class="form-control">
                           </div>
                         </div>
                         {{-- <div class="col-md-6">
@@ -61,7 +59,7 @@
                         </div> --}}
                       </div>
                       <button type="submit" class="btn btn-gradient-info me-2">Simpan</button>
-                      <a href="{{ route('cols_dt')}}" class="btn btn-gradient-light me-2">Batal</button>
+                      <a href="{{ route('cols_dt')}}" class="btn btn-gradient-light me-2">Batal</a>
                     </form>
                   </div>
             </div>
