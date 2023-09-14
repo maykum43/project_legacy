@@ -184,7 +184,7 @@
                   <!--change to offline or busy as needed-->
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
-                  <span class="font-weight-bold mb-2">Ibu Yuli</span>
+                  <span class="font-weight-bold mb-2">Ibu Dela Triana</span>
                   <span class="text-secondary text-small">Admin Gudang</span>
                 </div>
                 {{-- <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i> --}}
@@ -198,15 +198,14 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Invoice</span>
+                <span class="menu-title">Transaksi</span>
                 <i class="menu-arrow"></i>
                 <i class="mdi mdi-blur-linear menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{{ route('inv') }}">Data Invoice</a></li>
-                  <li class="nav-item"> 
-                    <a class="nav-link" href="pages/ui-features/typography.html">Data Customer</a>
+                  <li class="nav-item"> <a class="nav-link" href="{{ route('inv') }}">Invoice</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Surat Jalan</a></li>
                   </li>
                 </ul>
               </div>
@@ -234,20 +233,28 @@
             </li> --}}
             <li class="nav-item">
               <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Surat Jalan</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                <span class="menu-title">Customer</span>
+                <i class="mdi mdi-account-multiple-outline menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/charts/chartjs.html">
-                <span class="menu-title">Barang Masuk</span>
-                <i class="mdi mdi-airplane-landing menu-icon"></i>
+              <a class="nav-link" data-bs-toggle="collapse" href="#dt_pc" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Petty Cash</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-animation menu-icon"></i>
               </a>
+              <div class="collapse" id="dt_pc">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="{{ route('inv') }}">Transaksi</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Akun</a></li>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/tables/basic-table.html">
-                <span class="menu-title">Stok of Name</span>
-                <i class="mdi mdi-content-paste menu-icon"></i>
+                <span class="menu-title">Pegawai</span>
+                <i class="mdi mdi-account menu-icon"></i>
               </a>
             </li>
             {{--<li class="nav-item">
