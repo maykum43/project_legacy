@@ -17,9 +17,17 @@ Route::get('/', function () {
 
 //Main
 Route::get('/index', 'MainController@index')->name('home');
+
 //Invoice
 Route::get('/inv', 'InvoiceController@index')->name('inv');
 Route::get('/inv.create', 'InvoiceController@create')->name('inv.create');
+
+//Pegawai
+Route::get('/pgw', 'PegawaiController@index')->name('pgw');
+Route::get('/pgw.create','PegawaiController@create')->name('pgw.create');
+
+//Petty Cash
+Route::get('/akun_ptc', 'AkunPTCController@index')->name('akn_ptc');
 
 //Brg
 Route::get('/brg','StokController@index')->name('brg');

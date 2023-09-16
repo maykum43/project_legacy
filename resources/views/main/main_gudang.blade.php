@@ -198,7 +198,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Transaksi</span>
+                <span class="menu-title">Penjualan</span>
                 <i class="menu-arrow"></i>
                 <i class="mdi mdi-blur-linear menu-icon"></i>
               </a>
@@ -245,14 +245,15 @@
               </a>
               <div class="collapse" id="dt_pc">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{{ route('inv') }}">Transaksi</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="">Kas Kecil</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="">Kas Besar</a></li>
                   <li class="nav-item"> <a class="nav-link" href="#">Akun</a></li>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/tables/basic-table.html">
+              <a class="nav-link" href="{{route('pgw')}}">
                 <span class="menu-title">Pegawai</span>
                 <i class="mdi mdi-account menu-icon"></i>
               </a>

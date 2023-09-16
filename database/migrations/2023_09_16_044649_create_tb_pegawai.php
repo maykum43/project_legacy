@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePettyCasesTable extends Migration
+class CreateTbPegawai extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreatePettyCasesTable extends Migration
      */
     public function up()
     {
-        Schema::create('petty_cases', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('tb_pegawai', function (Blueprint $table) {
+            $table->bigIncrements('id_pgw');
+            $table->string('nama');
+            $table->string('jabatan');
+            $table->string('tlp', 13);
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreatePettyCasesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('petty_cases');
+        Schema::dropIfExists('tb_pegawai');
     }
 }

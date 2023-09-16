@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePegawaisTable extends Migration
+class CreateTbAkun extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreatePegawaisTable extends Migration
      */
     public function up()
     {
-        Schema::create('pegawais', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('tb_akun', function (Blueprint $table) {
+            $table->bigIncrements('id_akun');
+            $table->string('no_rek')->unique();
+            $table->string('ket');
+            $table->string('ket1');
+            $table->smallInteger('posisi');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreatePegawaisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pegawais');
+        Schema::dropIfExists('tb_akun');
     }
 }
