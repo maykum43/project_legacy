@@ -10,7 +10,8 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 {{-- <a href="" type="button" class="btn btn-gradient-info btn-fw">Invoice Baru</a> --}}
-                <a href="{{route('pgw.create')}}" type="button" class="btn btn-gradient-info btn-icon-text">
+                <a href="{{ route('pgw.create') }}" type="button"
+                    class="btn btn-gradient-info btn-icon-text">
                     <i class=" mdi mdi-note-plus btn-icon-append"></i>
                     Tambah Data
                 </a>
@@ -49,41 +50,44 @@
                             </thead>
                             <tbody>
                                 @php
-                                $i= 1;    
+                                    $i= 1;
                                 @endphp
 
-                                @foreach ($pgws as $pgws)
-                                <tr>
-                                    <td>
-                                        {{-- <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i> --}}
-                                        {{ $i++ }}
-                                    </td>
-                                    <td>{{$pgws->id_pgw}}</td>
-                                    <td>{{$pgws->nama}}</td>
-                                    <td>{{$pgws->jabatan}}</td>
-                                    <td>{{$pgws->tlp}}</td>
-                                    {{-- <td style="background-color: {{ $item->rgb }}; border-radius: 50%;">
+                                @foreach($pgws as $pgws)
+                                    <tr>
+                                        <td>
+                                            {{-- <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i> --}}
+                                            {{ $i++ }}
+                                        </td>
+                                        <td>{{ $pgws->id_pgw }}</td>
+                                        <td>{{ $pgws->nama }}</td>
+                                        <td>{{ $pgws->jabatan }}</td>
+                                        <td>{{ $pgws->tlp }}</td>
+                                        {{-- <td style="background-color: {{ $item->rgb }};
+                                        border-radius: 50%;">
                                         <div style="width: 10px; height: 10px;"></div>
-                                    </td> --}}
-                                    <td>
-                                        <div class="btn-group">
-                                            <button type="button"
-                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
-                                                data-bs-toggle="dropdown" aria-expanded="false">Option</button>
-                                            <div class="dropdown-menu" style="">
-                                                <a herf="#" class="dropdown-item">Detail</a>
-                                                <a href="" class="dropdown-item">Edit</a>
-                                                <a href="" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="dropdown-item">Hapus</a>
-                                                {{-- <button type="submit" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm">
+                                        </td> --}}
+                                        <td>
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">Option</button>
+                                                <div class="dropdown-menu" style="">
+                                                    <a herf="#" class="dropdown-item">Detail</a>
+                                                    <a href="" class="dropdown-item">Edit</a>
+                                                    <a href=""
+                                                        onclick="return confirm('Anda yakin ingin menghapus data ini?')"
+                                                        class="dropdown-item">Hapus</a>
+                                                    {{-- <button type="submit" onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm">
                                                     Hapus
                                                 </button> 
                                                 {{ route('col.delete') }} --}}
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>  
+                                        </td>
+                                    </tr>
                                 @endforeach
-                                
+
                             </tbody>
                         </table>
                     </div>

@@ -9,7 +9,7 @@ class Pgw_Model extends Model
     protected $table = "tb_pegawai";
     protected $primaryKey = "id_pgw";
     protected $fillable = [
-        'id_pgw','nama','jabatan','created_at'
+        'id_pgw','nama','jabatan','tlp','created_at'
     ];
 
     public function pegawais()

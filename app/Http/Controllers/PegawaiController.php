@@ -37,7 +37,14 @@ class PegawaiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Pgw_Model::create([
+            'nama' => $request->nama_pgw,
+            'tlp' => $request->no_tlp,
+            'jabatan' => $request->jabatan,
+        ]);
+
+        return redirect()->route('pgw')
+            ->with('success', 'Color added successfully.');
     }
 
     /**

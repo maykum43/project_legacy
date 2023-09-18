@@ -25,6 +25,7 @@ Route::get('/inv.create', 'InvoiceController@create')->name('inv.create');
 //Pegawai
 Route::get('/pgw', 'PegawaiController@index')->name('pgw');
 Route::get('/pgw.create','PegawaiController@create')->name('pgw.create');
+Route::post('/pgw.store','PegawaiController@store')->name('pgw.store');
 
 //Petty Cash
 Route::get('/akun_ptc', 'AkunPTCController@index')->name('akn_ptc');
