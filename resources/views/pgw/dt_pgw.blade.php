@@ -74,7 +74,7 @@
                                                     data-bs-toggle="dropdown" aria-expanded="false">Option</button>
                                                 <div class="dropdown-menu" style="">
                                                     <a herf="#" class="dropdown-item">Detail</a>
-                                                    <a href="" class="dropdown-item">Edit</a>
+                                                    <a href="{{route('pgw.edit',$pgws->id_pgw)}}" class="dropdown-item">Edit</a>
                                                     <a href=""
                                                         onclick="return confirm('Anda yakin ingin menghapus data ini?')"
                                                         class="dropdown-item">Hapus</a>

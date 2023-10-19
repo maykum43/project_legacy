@@ -66,19 +66,12 @@ class PegawaiController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Pgw_Model::where('id_pgw',$id)->first();
+        return view('pgw.edit_pgw', compact('data'));;
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
+        dd($request->all());
     }
 
     /**
